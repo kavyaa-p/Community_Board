@@ -4,7 +4,7 @@ Submitted by: Kavya Pabbaraju
 
 This web app: Shows the different locations of Indian restaurants in Orange County
 
-Time spent: 5 hours spent in total
+Time spent: **X** hours spent in total
 
 ## Required Features
 
