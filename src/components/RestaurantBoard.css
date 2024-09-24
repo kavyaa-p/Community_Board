@@ -1,0 +1,7 @@
+/* Styling the container to display the cards in a grid or flexbox */
+.RestaurantBoard {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards */
+}

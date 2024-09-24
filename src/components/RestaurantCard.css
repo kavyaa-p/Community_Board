@@ -1,0 +1,54 @@
+/* Styling each RestaurantCard */
+.RestaurantCard {
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Spacing between the cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 300px; /* Set a fixed width (optional) */
+    text-align: left; /* Align text to the left */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Add a hover effect to make the cards pop */
+.RestaurantCard:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the first button (e.g., View Menu) */
+.links a:first-child {
+    display: inline-block; /* Allows the link to behave like a button */
+    background-color: #ff4500; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding inside the button */
+    margin: 10px 5px 0 0; /* Spacing between buttons */
+    border-radius: 6px; /* Rounded corners for buttons */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect to the first button */
+.links a:first-child:hover {
+    background-color: #ff6347; /* Slightly lighter red on hover */
+}
+
+/* Styling the second button (e.g., View Yelp) */
+.links a:last-child {
+    display: inline-block;
+    background-color: transparent; /* Transparent background */
+    color: #ff4500; /* Text color matching the first button */
+    padding: 8px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff4500; /* Add a border with the same color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add hover effect to the second button */
+.links a:last-child:hover {
+    background-color: #ff4500; /* Fill with color on hover */
+    color: white; /* Change text color to white on hover */
+}
