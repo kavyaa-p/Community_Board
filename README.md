@@ -4,7 +4,7 @@ Submitted by: Kavya Pabbaraju
 
 This web app: Shows the different locations of Indian restaurants in Orange County
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
@@ -16,11 +16,12 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Buttons or links to a related resources are on each card component
-- [ ] The site is responsive for both desktop and mobile formats
+- [x] The site is responsive for both desktop and mobile formats
 
 The following **additional** features are implemented:
 
-* [x] Information regarding the restaurants, such as open and close timings, as well as link to their Yelp page was included.
+* [x] Information regarding the restaurants, such as address as well as an additional link to their Yelp page was listed. Menu button is disabled for restaurants that don't have a 
+dedicated menu page.
 
 ## Video Walkthrough
 
@@ -37,7 +38,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+While building this app, I was struggling a lot with setting up the media queries to make the app responsive on different devices. I couldn't find a way to make the buttons that I set up for the Yelp site and menu site for each restaurant, to not extend beyond the  background I created for each card in the restaurant board.
 
 ## License
 
