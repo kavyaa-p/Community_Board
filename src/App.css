@@ -1,3 +1,4 @@
+/* Root container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,13 +7,117 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   color: black;
   background-color: white;
+  line-height: 1.6;
 }
 
-
+/* Remove the default margin from body */
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Header container */
+.header {
+  background-color: #ff4500; /* Match button color */
+  width: 100%; /* Span the entire width of the parent */
+  padding: 25px 0; /* Adjust padding for better spacing */
+  text-align: center; /* Center the h1 text */
+  margin: 0; /* Remove any margins */
+}
+
+/* h1 styling */
+.header h1 {
+  color: white; /* Make the h1 text white */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  margin: 0; /* Remove the default margin from h1 */
+}
+
+/* Global heading styles */
+h1 {
+  color: #ff4500; /* Orange-red color for main headings */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 1px; /* Slight spacing for a clean look */
+  border-bottom: 2px solid #ff4500; /* Underline effect */
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+h2, h3 {
+  color: #ff4500; /* Orange-red color for other headings */
+}
+
+/* Footer styles */
+footer {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/*                     ************************                      */
+/* Responsive styles for screens smaller than 768px (mobile devices) */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem; /* Less padding on small screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Smaller heading for mobile */
+  }
+
+  .RestaurantBoard {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: center; /* Center the cards */
+  }
+
+  .RestaurantCard {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+
+  .links a {
+    width: 100%; /* Make buttons full width */
+    text-align: center; /* Center button text */
+    margin-bottom: 10px; /* Add space between buttons */
+  }
+}
+
+/* Responsive styles for very small screens (smaller than 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Even smaller heading for very small screens */
+  }
+
+  .RestaurantCard {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .links a {
+    padding: 8px 16px; /* Smaller buttons */
+  }
+}
+
+/* Responsive styles for larger screens (desktops and tablets) */
+@media (min-width: 1024px) {
+  .RestaurantBoard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space between cards on larger screens */
+  }
+
+  .RestaurantCard {
+    width: 30%; /* 3 cards per row on larger screens */
+    margin: 10px; /* Space between the cards */
+  }
 }
