@@ -1,13 +1,17 @@
 import './App.css';
+import RestaurantBoard from './components/RestaurantBoard';
 
 const App = () => {
 
   return (
     <div className="App">
-      <h1>Hello, World!</h1>
-      
+      <div className='header'>
+        <h1>Indian Restaurant Favorites in Orange County</h1>
+      </div>
+
+      <RestaurantBoard />
     </div>
   )
 }
 
-export default App
+export default App;
